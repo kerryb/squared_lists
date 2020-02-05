@@ -21,5 +21,9 @@ defmodule SquaredListsTest do
     test "works with empty lists" do
       assert SquaredLists.comp([], [])
     end
+
+    test "returns false for different length lists" do
+      refute SquaredLists.comp([1, 2], [2, 4, 9])
+    end
   end
 end
