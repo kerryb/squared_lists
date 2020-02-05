@@ -17,5 +17,9 @@ defmodule SquaredListsTest do
     test "works with negative numbers" do
       assert SquaredLists.comp([-2, 3, 2], [9, 4, 4])
     end
+
+    test "works with empty lists" do
+      assert SquaredLists.comp([], [])
+    end
   end
 end
