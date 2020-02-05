@@ -13,5 +13,9 @@ defmodule SquaredListsTest do
       b = [132, 14641, 20736, 361, 25921, 361, 20736, 361]
       refute SquaredLists.comp(a, b)
     end
+
+    test "works with negative numbers" do
+      assert SquaredLists.comp([-2, 3, 2], [9, 4, 4])
+    end
   end
 end
