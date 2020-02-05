@@ -25,5 +25,13 @@ defmodule SquaredListsTest do
     test "returns false for different length lists" do
       refute SquaredLists.comp([1, 2], [2, 4, 9])
     end
+
+    test "returns false if the first list is nil" do
+      refute SquaredLists.comp(nil, [2, 4, 9])
+    end
+
+    test "returns false if the second list is nil" do
+      refute SquaredLists.comp([1, 2], nil)
+    end
   end
 end
